@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700')
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css')
+
+@font-face 
+  font-family: 'Rational'
+  src: url('/global/fonts/Rational/RationalTWText-Book.ttf')  format('truetype')
+
+@font-face 
+  font-family: 'Rational'
+  src: url('/global/fonts/Rational/RationalTWText-Bold.ttf')  format('truetype')
+  font-weight: bold
+
+@import "../shared/_variables"
+@import "../../../../node_modules/bulma/sass/utilities/_all.sass"
+
+html, body
+    overflow: hidden
+
+//
+$hr-margin: 0px
+$hr-background-color: $primary
+$hr-height: 5px
+@import "../../../../node_modules/bulma/sass/base/_all.sass"
+@import "../../../../node_modules/bulma/sass/elements/icon.sass"
+//
+// $button-padding-horizontal: 30px
+// $button-padding-vertical: 28px
+@import "../../../../node_modules/bulma/sass/elements/button.sass"
+.button
+  @extend .is-rounded
+  text-transform: uppercase
+  font-family: $family-secondary
+  &.is-primary
+    color: $black
+//
+@import "../../../../node_modules/bulma/sass/elements/container.sass"
+
+//
+$input-border-color: $primary
+$input-color: $colorinput
+@import "../../../../node_modules/bulma/sass/elements/form.sass"
+
+
+.control
+   font-family: $family-secondary
+
+.input
+  font-family: $family-secondary
+  margin-top: 5px
+  
+
+.select select
+  font-family: $family-secondary
+  padding-top: 5px
+    
+
+//
+@import "../../../../node_modules/bulma/sass/grid/columns.sass"
+
+
+//
+
+@import "../../../../node_modules/bulma/sass/layout/_all"
+
+.hero.is-black .title
+    color: $primary
+    @extend .is-spaced
+.hero .subtitle
+    color: $white
+    @extend .is-uppercase
+//
+
+//
+$title-color: $primary
+$title-line-height: 1.21
+$subtitle-line-height: 1.31
+
+@import "../../../../node_modules/bulma/sass/elements/title"
+
+.title
+    font-family: $family-secondary
+    @extend .is-spaced, .is-uppercase, .is-size-1-fullhd, .is-size-2-desktop, .is-size-3-tablet, .is-size-3-mobile
+.subtitle
+    @extend .is-size-4-fullhd, .is-size-6-desktop, .is-size-6-tablet, .is-size-7-mobile
+//
+@import "../../../../node_modules/bulma/sass/components/navbar"
+
+
+
+
